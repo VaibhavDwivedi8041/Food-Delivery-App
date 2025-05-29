@@ -157,10 +157,13 @@ router.post('/orderData', async (req, res) => {
             console.log("1231242343242354",req.body.email)
             await Order.create({
                 email: req.body.email,
-                order_data:[data]
+                order_data:[data],
+                
+                
             }).then(() => {
                 res.json({ success: true })
             })
+           
         } catch (error) {
             console.log(error.message)
             res.send("Server Error", error.message)
@@ -185,7 +188,7 @@ router.post('/myOrderData', async (req, res) => {
     try {
         console.log(req.body.email)
         let eId = await Order.findOne({ 'email': req.body.email })
-        //console.log(eId)
+        console.log("tasdasdasD",eId)
         res.json({orderData:eId})
     } catch (error) {
         res.send("Error",error.message)
