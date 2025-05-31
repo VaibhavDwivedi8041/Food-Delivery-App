@@ -6,7 +6,7 @@ export default function Login() {
   const handlesubmit=async(e)=>{
       e.preventDefault();
       console.log(JSON.stringify({email:credentials.email,password:credentials.password}))
-      const response=await fetch("http://localhost:5000/api/loginuser",{
+      const response=await fetch("https://food-delivery-app-7d1n.onrender.com/api/loginuser",{
         method:'POST',
         headers:{
           'Content-Type':'application/json'
