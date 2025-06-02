@@ -64,10 +64,6 @@ export default function Card(props) {
                             </select>
 
                             <div className='d-inline h-100 fs-5'>₹{finalPrice}/-</div>
-<<<<<<< HEAD
-=======
-
->>>>>>> 733d020a283932d867b02ac221e712f38d1ccb47
                         </div>
                     </div>
                     <hr>
