@@ -16,7 +16,11 @@ export default function Cart() {
     const handleCheckOut = async () => {
         let userEmail = localStorage.getItem("userEmail");
         // console.log(data,localStorage.getItem("userEmail"),new Date())
+<<<<<<< HEAD
         let response = await fetch("http://localhost:5000/api/orderData", {
+=======
+        let response = await fetch("https://food-delivery-app-7d1n.onrender.com/api/orderData", {
+>>>>>>> 733d020a283932d867b02ac221e712f38d1ccb47
           // credentials: 'include',
           // Origin:"http://localhost:3000/login",
           method: 'POST',
