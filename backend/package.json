@@ -4,27 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
     "start": "node index.js",
-=======
-     "start": "node index.js",
->>>>>>> 733d020a283932d867b02ac221e712f38d1ccb47
     "dev": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "vaibhav",
   "license": "ISC",
   "dependencies": {
-<<<<<<< HEAD
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "axios": "^1.7.2",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
-=======
-    "axios": "^1.7.2",
-    "bcryptjs": "^2.4.3",
->>>>>>> 733d020a283932d867b02ac221e712f38d1ccb47
     "express": "^4.19.2",
     "express-validator": "^7.1.0",
     "jsonwebtoken": "^9.0.2",
