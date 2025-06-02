@@ -32,7 +32,7 @@ const mongoDB = require("./db");
 // CORS Configuration
 const allowedOrigins = [
   "http://localhost:3000", // For local development
-  "https://guileless-blini-b9248d.netlify.app", // Your Netlify frontend
+  "https://nimble-baklava-fdbdb2.netlify.app", // Your Netlify frontend
 ];
 
 // Enhanced CORS middleware
