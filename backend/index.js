@@ -32,7 +32,7 @@ const mongoDB = require("./db");
 // CORS Configuration
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://gilded-nougat-c4fdad.netlify.app/", // Replace with your Netlify URL
+  "https://gilded-nougat-c4fdad.netlify.app", // Replace with your Netlify URL
 ];
 
 app.use((req, res, next) => {
