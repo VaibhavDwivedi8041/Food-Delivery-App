@@ -71,9 +71,5 @@ router.post("/loginuser", [
     }
 })
 
-<<<<<<< HEAD
 module.exports = router;
 
-=======
-module.exports = router;
->>>>>>> 733d020a283932d867b02ac221e712f38d1ccb47

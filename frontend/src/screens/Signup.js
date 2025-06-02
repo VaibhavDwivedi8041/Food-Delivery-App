@@ -7,11 +7,7 @@ export default function Signup() {
   const handlesubmit = async (e) => {
     e.preventDefault();
     console.log(JSON.stringify({ name: credentials.name, email: credentials.email, password: credentials.password, location: credentials.geolocation }))
-<<<<<<< HEAD
     const response = await fetch("http://localhost:5000/api/CreateUser", {
-=======
-    const response = await fetch("https://food-delivery-app-7d1n.onrender.com/api/CreateUser", {
->>>>>>> 733d020a283932d867b02ac221e712f38d1ccb47
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
