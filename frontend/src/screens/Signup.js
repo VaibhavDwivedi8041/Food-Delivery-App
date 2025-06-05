@@ -134,6 +134,16 @@ export default function Signup() {
     })
   }
 
+  // Function to use default credentials
+  const useDefaultCredentials = () => {
+    setCredentials({
+      name: "Demo User",
+      email: "abcs@gmail.com",
+      password: "123456",
+      geolocation: "Demo Address"
+    })
+  }
+
   return (
     <div className="container mt-5">
       <div className="row justify-content-center">
@@ -236,6 +246,28 @@ export default function Signup() {
                   </Link>
                 </div>
               </form>
+
+              {/* Default Credentials Section */}
+              <div className="mt-4 p-3 bg-dark border rounded text-white">
+                <h6 className="text-warning mb-2">
+                  <i className="bi bi-exclamation-triangle-fill me-1"></i>
+                  Demo Credentials
+                </h6>
+                <p className="small mb-2 text-light">
+                  If your credentials are showing wrong, use these credentials:
+                </p>
+                <div className="small">
+                  <strong>Email:</strong> abcs@gmail.com<br/>
+                  <strong>Password:</strong> 123456
+                </div>
+                <button 
+                  type="button" 
+                  className="btn btn-outline-warning btn-sm mt-2"
+                  onClick={useDefaultCredentials}
+                >
+                  Use Demo Credentials in Login Section
+                </button>
+              </div>
             </div>
           </div>
         </div>
